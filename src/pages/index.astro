@@ -1,0 +1,136 @@
+---
+import CenteredContentLayout from "../layouts/CenteredContentLayout.astro";
+import Layout from "../layouts/Layout.astro";
+import InfoPanel from "../components/InfoPanel";
+---
+
+<!-- TODO:mobile viewport -->
+<Layout title="Domov">
+  <CenteredContentLayout>
+    <p class="text-3xl lg:text-4xl text-white pt-6 text-center">
+      Najlepšia investícia je do vzdelania o investovaní!
+    </p>
+    <p class="text-2xl lg:text-4xl text-white py-8 text-center">
+      Preto je tu kurz o investovaní do Kryptomien a DeFi!
+    </p>
+    <a
+      href="/faq"
+      class="bg-kryptokurz-green hover:bg-green-600 text-white font-semibold rounded py-2.5 px-4"
+      >Často kladené otázky</a
+    >
+    <video
+      class="py-10 w-full h-96 lg:w-[1020px] lg:h-[630px] object-cover"
+      src="/index/trailer.mp4"
+      poster="/index/trailer_poster.jpg"
+      controls
+      title="YouTube video player"></video>
+
+    <p class="text-3xl text-white mb-10">Troj Stupňová Osnova</p>
+    <article class="flex w-full flex-wrap items-center justify-center gap-3">
+      <InfoPanel
+        imgSrc="/index/saving.webp"
+        level={1}
+        title="Základy, Investovanie a Technológia"
+        description="Koncept a vznik technológie blockchainu a kryptomien. Základné ekonomické pojmy, druhy blockchainov, kryptomien a tokenov.Oboznamenie sa s centralizovanými a decentralizovanými burzami a peňaženkami. Tvorba účtu na centralizovanej burze a tvorba nekustodiálnej peňaženky.Zásadná analýza projektov a technická analýza grafov."
+      />
+      <InfoPanel
+        imgSrc="/index/farming.webp"
+        level={2}
+        title="Generovanie Príjmu s DeFi"
+        description="Ponorenie sa do decentralizovaných financií, DeFi protokolov a ich decentralizovaných aplikácií (dappov) pomocou web3 peňaženiek.Naučíš sa ako obchodovať na decentralizovaných burzách, investovať do likvidných fondov, poskytovať likviditu DeFi protokolom, a dôležité prvky risk manažmentu. Analýza ekonomiky a tokenomiky krypto projektov."
+      />
+      <InfoPanel
+        imgSrc="/index/looping.webp"
+        level={3}
+        title="Buď Svojou Vlastnou Bankou"
+        description="Prekolateralizované pôžičky, delta neutrálne a pseudo delta neutrálne stratégie, arbitráž, syntetiká a investovanie do poskytovateľov opcií, flashloans, samosplácanie, likvidný staking, looping, multi-protokolový, sériový yield-farming, pákovanie výnos-nesúcich aktív, swap zábezpeky a samolikvidácia."
+      />
+    </article>
+    <section class="my-8 [&>a]:cursor-pointer [&>a]:mx-1 [&>a]:font-medium">
+      <a
+        class="bg-kryptokurz-green hover:bg-green-600 text-white rounded py-2.5 px-4"
+        href="/cennik">Cenník</a
+      >
+      <a
+        class="border-2 border-kryptokurz-green hover:border-green-600 text-kryptokurz-green hover:text-green-600 rounded py-2.5 px-6"
+        href="/share/Krypto Kurz Osnova.pdf"
+        download="Krypto Kurz Osnova">Stiahnuť Detail Osnovy</a
+      >
+    </section>
+    <article class="flex flex-col my-4 w-full px-2 lg:px-96">
+      <span class="text-3xl text-white">Prečo práve tento kurz?</span>
+      <!--  -->
+      <section class="flex flex-col my-4">
+        <span class="text-2xl text-white">Nie Len Základy!</span>
+        <span class="text-lg text-kryptokurz-gray"
+          >Na internete je viacero kurzov zameraných na kryptomeny, no väčšina
+          je o tradovaní a drtivá väčšina preberá iba základy tejto technológie
+          a iba o najznamejších kryptomenách na trhu, bez ohľadu na to že na
+          trhu máme tisíce rôznych mincí na stovkách rôznych burzách. Krypto nie
+          je len o Bitcoine! Investovanie typu "Kúp a drž" je efektívne iba ak
+          trh ide "hore", v tomto kurze ťa naučím ako môžu tvoje krpytomeny a
+          tokeny zarábať peniaze na vrch ich rastúcej ceny, namiesto toho aby vo
+          tvojej peňaženke len tak ležali a nič nerobili!
+        </span>
+      </section>
+      <!--  -->
+      <section class="flex flex-col my-4">
+        <span class="text-2xl text-white">Analýza Decentralizovaného Trhu!</span
+        >
+        <span class="text-lg text-kryptokurz-gray"
+          >Môj kurz ťa naučí nie len čo je to blockchain, Bitcoin a Ethereum, a
+          ako si svoje kryptomeny nakúpiť, ale hlavne ako nájsť potenciálne
+          investície, analyzovať ich potenciál a urobiť si svoj vlastný výskum a
+          nelimitovať sa len na top 5 mincí na trhu. Jedným z mojich cieľov je
+          vytrénovať sebestačných investorov, ktorí vedia kde hľadať aké
+          informácie a urobiť si vlastnú analýzu projektov na trhu.
+        </span>
+      </section>
+      <!-- descs -->
+      <article>
+        <section class="flex flex-col my-4">
+          <span class="text-2xl text-white"
+            >Prvý Slovenský Kurz Zameraný na Decentralizované Financie!
+          </span>
+          <span class="text-lg text-kryptokurz-gray"
+            >Tento kurz kladie dôraz na príležitosti pasívneho príjmu a
+            zloženého úročenia na kryptomenách a tokenoch v DeFi, ktoré ti
+            umožnia zarábať úroky na vrch toho čo tvoje aktíva už samy o sebe
+            potenciálne zarobia. DeFi nám totiž umožňuje stáť sa svojou vlastnou
+            bankou! Pôžičky, poistenia, zmlúvy, dlhopisy, zúročovanie vlastnej
+            likvidity, dividendy, zložené úročenie, to všetko a oveľa viac je
+            vďaka DeFi dostupné každému na krypto trhu! DeFi berie moc z rúk
+            bánk a finančných inštitúcií. Investičné stratégie, ktoré sú na
+            tradičnom trhu vyhradené pre vplyvné osoby a inštitúcie s veľkým
+            kapitálom sú vďaka DeFi dostupné každému. Okrem toho, vďaka
+            technológii na ktorej je DeFi založené nám umožňuje ponuku
+            finančných produktov a služieb, ktoré v tradičných financiách
+            neexistujú vôbec, napríklad ako čo raz populárnejšie flashloans!
+          </span>
+        </section>
+        <!--  -->
+        <section class="flex flex-col my-4">
+          <span class="text-2xl text-white">Vhodné Pre Každého!</span>
+          <span class="text-lg text-kryptokurz-gray"
+            >Nezáleží na tom či si vzdelaný ekonóm, zabehnutý investor na
+            tradičnom trhu, alebo nemáš žiadne vzdelanie vo finančnom sektore!
+            Začneme pekne od základov, po pár týždňoch sa dostaneme hlboko do
+            DeFi a po konci tohto kurzu budeš pripravený výjsť do
+            decentralizovaného sveta!
+          </span>
+        </section>
+        <!--  -->
+        <section class="flex flex-col my-4">
+          <span class="text-2xl text-white">Bezpečnosť je Priorita</span>
+          <span class="text-lg text-kryptokurz-gray"
+            >V tomto kurze venujeme veľa pozornosti zabezpečeniu financií. Je
+            nutné naučiť sa uchovať svoje peniaze v bezpečí, či už pred
+            hackermi, vývojármi a hlavne pred vlastnými chybami! Dôraz na
+            bezpečnosť sa neskôr v kurze iba zvýši, keď si vytvoríme svoju prvú
+            decentralizovanú peňaženku. Je dôležité sa nebáť a dávať pozor.
+          </span>
+        </section>
+      </article>
+    </article>
+  </CenteredContentLayout>
+</Layout>
